@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+    .container {
+      display: grid;
+      width: 100%;
+      height: 100vh;
+      grid-template-columns: repeat(8, 12vw);
+      grid-template-rows: 15vh 30vh 20vh 20vh 15vh;
+      gap: 0.5vh;
+      text-align: center;
+      grid-template-areas: "header header header header header header header header"
+                           "content-1 content-1 content-1 content-1 content-1 content-1 sidebar sidebar"
+                           "content-2 content-2 content-2 content-3 content-3 content-3 sidebar sidebar"
+                           "content-4 content-4 content-4 content-4 content-4 content-4 sidebar sidebar"
+                           "footer-1 footer-1 footer-2 footer-2 footer-3 footer-3 footer-4 footer-4";
+    }
+
+
+    .header {
+      grid-area: header;
+      background: grey;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      background: green;
+    }
+
+    .content-1 {
+      grid-area: content-1;
+      background: yellow;
+    }
+
+    .content-2 {
+      grid-area: content-2;
+      background: orange;
+    }
+
+    .content-3 {
+      grid-area: content-3;
+      background: pink;
+    }
+
+    .content-4 {
+      grid-area: content-4;
+      background: red;
+    }
+
+    .footer-1 {
+      grid-area: footer-1;
+      background: purple;
+    }
+    .footer-2 {
+      grid-area: footer-2;
+      background: purple;
+    }
+    .footer-3 {
+      grid-area: footer-3;
+      background: purple;
+    }
+    .footer-4 {
+      grid-area: footer-4;
+      background: purple;
+    }
+
+    </style>
+
+  </head>
+
+
+  <body>
+    <div class="container">
+      <header class="header">Шапка страницы</header>
+      <aside class="sidebar">Боковая область</aside>
+      <div class="content-1">Основная часть</div>
+      <div class="content-2">Ещё 1</div>
+      <div class="content-3">Ещё 2</div>
+      <div class="content-4">Ещё 3</div>
+      <footer class="footer-1">Секция футера 1</footer>
+      <footer class="footer-2">Секция футера 2</footer>
+      <footer class="footer-3">Секция футера 3</footer>
+      <footer class="footer-4">Секция футера 4</footer>
+    </div>
+
+  </body>
+
+</html>
